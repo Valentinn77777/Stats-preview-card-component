@@ -1,0 +1,219 @@
+@font-face {
+    font-family: Intern;
+    src: url(./Fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: LexendDeca;
+    src: url(./Fonts/LexendDeca-Regular.ttf);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+    background-color: hsl(233, 47%, 7%);
+
+    height: 100vh;
+    width: 100vw;
+
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.card {
+    height: 350px;
+    width: 1000px;
+
+    background-color: hsl(244, 38%, 16%);
+
+    border-radius: 10px;
+
+    margin: auto;
+
+}
+
+.banner_Mobile {
+    display: none;
+}
+
+.card .banner_Desktop {
+    height: 350px;
+    width: 450px;
+
+    opacity: 0.5;
+    background-color: hsl(277, 64%, 61%);
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    margin-left: 550px;
+}
+
+.card .Title {
+    font-family: LexendDeca;
+    font-size: 30px;
+    font-weight: 400, 700;
+    text-align: left;
+
+    width: 330px;
+    height: 100px;
+
+    color: hsl(0, 0%, 100%);
+
+    margin-top: -300px;
+    margin-left: 50px;
+}
+
+.card .Colored_Title {
+    color:  hsl(277, 64%, 61%);
+
+    margin: 0px;
+}
+
+.Middle {
+    font-family: LexendDeca;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.6);
+
+    height: 160px;
+    width: 300px;
+
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.Bottom {
+    display: flex;
+    flex-flow: row;
+
+    margin-top: -65px;
+}
+
+.amount {
+    font-family: LexendDeca;
+    color: hsl(0, 0%, 100%);
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 10px;
+    margin-left: 60px;
+}
+
+.type {
+    font-size: 13px;
+    font-family: LexendDeca;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+
+    opacity: 0.6;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+    margin-left: -40px;
+}
+
+@media (max-width: 375px) {
+
+.card {
+    height: 650px;
+    width: 300px;
+
+    background-color: hsl(244, 38%, 16%);
+
+    border-radius: 10px;
+
+    margin-top: 150px;
+    margin-bottom: 30px;
+
+    overflow: hidden;
+}
+
+.card .banner_Desktop {
+    display: none;
+}
+
+.card .banner_Mobile {
+    display: flex;
+
+    height: 220px;
+    width: 320px;
+}
+
+.card .Title {
+    font-family: LexendDeca;
+    font-size: 27px;
+    font-weight: 400, 700;
+    text-align: center;
+
+    width: 250px;
+    height: 100px;
+
+    color: hsl(0, 0%, 100%);
+
+    margin: auto;
+    margin-top: 25px;
+}
+
+.card .Colored_Title {
+    color:  hsl(277, 64%, 61%);
+
+    margin: 0px;
+}
+
+.Middle {
+    font-size: 14px;
+    font-family: LexendDeca;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.6);
+
+    height: 160px;
+    width: 250px;
+
+    margin: auto;
+    margin-top: 25px;
+}
+
+.Bottom {
+    display: flex;
+    flex-flow: column;
+
+    margin-top: -65px;
+}
+
+.amount {
+    font-family: LexendDeca;
+    color: hsl(0, 0%, 100%);
+
+    display: flex;
+    justify-content: center;
+
+    margin: 4px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.type {
+    font-size: 13px;
+    font-family: LexendDeca;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.6);
+
+    opacity: 0.6;
+
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 15px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+}
